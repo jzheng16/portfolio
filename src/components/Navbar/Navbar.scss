@@ -1,0 +1,33 @@
+nav {
+  background-color: black;
+
+  display: flex;
+ 
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 3em;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+}
+
+
+ul > li:first-child{
+  padding: 0px;
+}
+
+
+
+

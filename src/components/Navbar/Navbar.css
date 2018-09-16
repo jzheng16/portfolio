@@ -1,0 +1,17 @@
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  nav ul {
+    list-style: none; }
+  nav li {
+    display: inline-block;
+    margin-right: 3em; }
+  nav a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer; }
+
+ul > li:first-child {
+  padding: 0px; }

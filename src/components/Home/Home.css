@@ -1,0 +1,44 @@
+/* Coolors Exported Palette - coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #edf2f4;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center; }
+
+header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #2b2d42;
+  background-image: url("../../images/brick-wall.svg");
+  z-index: -1; }
+
+.header-title {
+  color: #edf2f4; }
+
+.contact {
+  background-color: #2b2d42; }
+  .contact h1 {
+    color: #edf2f4; }
+  .contact ul {
+    list-style: none;
+    text-align: center; }
+  .contact li {
+    display: inline-block;
+    margin: 0 1em; }
+  .contact a {
+    color: #edf2f4;
+    text-decoration: none; }
+
+.fa-square {
+  color: #8d99ae; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
