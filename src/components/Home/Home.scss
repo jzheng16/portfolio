@@ -1,0 +1,76 @@
+@import '../../palette.scss';
+
+.home {
+  
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color3;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  
+}
+
+header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: $color1;
+  background-image: url('../../images/brick-wall.svg');
+
+  z-index: -1;
+}
+
+.header-title {
+  color: $color3;
+}
+
+.contact {
+  background-color: $color1;
+
+  h1 {
+    color: $color3;
+  }
+
+  ul {
+    list-style: none;
+    text-align: center;
+    
+  };
+
+  li {
+    display: inline-block;
+    margin: 0 1em;
+  };
+
+  a {
+    color: $color3;
+    text-decoration: none;
+  };
+}
+
+
+
+.fab,
+.fas {
+ 
+}
+.fa-square {
+  color: $color2;
+  
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+
+
