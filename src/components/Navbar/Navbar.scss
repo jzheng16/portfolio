@@ -1,9 +1,11 @@
+@import '../../palette.scss';
+
 nav {
   background-color: black;
 
   display: flex;
  
-  justify-content: center;
+  justify-content: center;;
   align-items: center;
 
   ul {
@@ -21,12 +23,16 @@ nav {
     cursor: pointer;
   }
 
+  a:hover, a:active {
+    color: $color6;
+  }
+
+  li:first-child {
+   float: left;
+    
+  }
 }
 
-
-ul > li:first-child{
-  padding: 0px;
-}
 
 
 

@@ -1,0 +1,12 @@
+@import '../../palette.scss';
+
+footer {
+  background-color: black;
+}
+
+#copyright {
+  color: $color3;
+  margin: 0 0;
+  padding-bottom: 1em;
+  font-size: .7em;
+}

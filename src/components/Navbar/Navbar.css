@@ -1,3 +1,4 @@
+/* Coolors Exported Palette - coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
 nav {
   background-color: black;
   display: flex;
@@ -12,6 +13,7 @@ nav {
     color: white;
     text-decoration: none;
     cursor: pointer; }
-
-ul > li:first-child {
-  padding: 0px; }
+  nav a:hover, nav a:active {
+    color: #40e0d0; }
+  nav li:first-child {
+    float: left; }

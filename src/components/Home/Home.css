@@ -1,4 +1,5 @@
 /* Coolors Exported Palette - coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
+/*            HEADER              */
 header {
   display: flex;
   align-items: center;
@@ -8,37 +9,45 @@ header {
   overflow: hidden;
   text-align: center; }
 
-header:before {
+header:after {
   content: '';
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: #2b2d42;
-  background-image: url("../../images/brick-wall.svg");
-  z-index: -1; }
+  background-image: url("../../images/bg2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: blur(5px);
+  transition: all 1s; }
+
+header:hover::after {
+  filter: blur(0px); }
 
 .header-title {
-  color: #edf2f4; }
+  color: #edf2f4;
+  margin-bottom: 2em; }
 
-.contact {
-  background-color: #2b2d42; }
-  .contact h1 {
-    color: #edf2f4; }
-  .contact ul {
-    list-style: none;
-    text-align: center; }
-  .contact li {
-    display: inline-block;
-    margin: 0 1em; }
-  .contact a {
-    color: #edf2f4;
-    text-decoration: none; }
+.button-link {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 10px; }
+  .button-link:hover {
+    background-color: #04C2C9;
+    cursor: pointer; }
 
-.fa-square {
-  color: #8d99ae; }
+.navigate-to-about, .navigate-to-about:visited, .navigate-to-about:hover, .navigate-to-about:active {
+  color: white;
+  text-decoration: none; }
 
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; }
+.button-link:hover .fa-arrow-right {
+  transition: 0.9s;
+  transform: rotate(90deg); }
+
+.fa-arrow-right {
+  transition: 0.9s;
+  margin-left: .5em;
+  font-size: .8em; }

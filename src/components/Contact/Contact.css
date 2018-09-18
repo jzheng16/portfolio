@@ -1,0 +1,26 @@
+/* Coolors Exported Palette - coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
+/*             CONTACT           */
+.contact {
+  background-color: black; }
+  .contact h1 {
+    color: #edf2f4;
+    margin: 0; }
+  .contact ul {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0; }
+  .contact li {
+    display: inline-block;
+    margin: 0 1em; }
+  .contact a {
+    color: #edf2f4;
+    text-decoration: none; }
+
+li:hover .fa-square {
+  transition: all .5s;
+  transform: scale(1.1);
+  color: #40e0d0; }
+
+.fa-square {
+  color: #8d99ae; }
