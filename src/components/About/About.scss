@@ -1,0 +1,14 @@
+@import '../../palette.scss';
+/*             ABOUT            */
+
+.about {
+  background-color: $color1;
+  color: $color3;
+  h1 {
+    color: $color3;
+    margin: 0 0 .75em 0;
+  }
+  p {
+    margin: 0;
+  }
+}
