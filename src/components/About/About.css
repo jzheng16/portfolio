@@ -6,6 +6,7 @@
   color: #edf2f4; }
   .about h1 {
     color: #edf2f4;
-    margin: 0 0 .75em 0; }
+    margin: 0 1em 0;
+    padding-top: 1.5em; }
   .about p {
     margin: 0; }
