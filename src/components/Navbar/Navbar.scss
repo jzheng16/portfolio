@@ -7,6 +7,9 @@ nav {
  
   justify-content: center;;
   align-items: center;
+  z-index: 1;
+  // position: sticky;
+  // top: 0;
 
   ul {
     list-style: none;
@@ -24,7 +27,8 @@ nav {
   }
 
   a:hover, a:active {
-    color: $color6;
+    color: black;
+    background-color: $color6;
   }
 
   li:first-child {

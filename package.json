@@ -10,7 +10,8 @@
     "eslint-plugin-jest": "^21.22.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
-    "react-scripts": "1.1.5"
+    "react-scripts": "1.1.5",
+    "stickybits": "^3.5.5"
   },
   "dependencies": {
     "gh-pages": "^1.2.0",

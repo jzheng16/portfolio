@@ -3,7 +3,8 @@ nav {
   background-color: black;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  z-index: 1; }
   nav ul {
     list-style: none; }
   nav li {
@@ -14,6 +15,7 @@ nav {
     text-decoration: none;
     cursor: pointer; }
   nav a:hover, nav a:active {
-    color: #40e0d0; }
+    color: black;
+    background-color: #40e0d0; }
   nav li:first-child {
     float: left; }
