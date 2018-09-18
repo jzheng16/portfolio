@@ -2,6 +2,7 @@
 /*            PROJECTS            */
 
 .projects {
+  height: 100vh;
   background-color: $color1;
   color: $color3;
   h1 {
@@ -14,7 +15,29 @@
   background-color: $color1;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
   @media only screen and (min-width: 640px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+.card {
+  position: relative;
+  padding-top: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border: 1px solid #fff;
+  margin-bottom: 1em;
+  
+}
+
+.project_picture {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  margin: auto;
+  width: 100%;
+  height: auto;
 }
