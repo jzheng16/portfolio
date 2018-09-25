@@ -85,9 +85,9 @@
   z-index: 2;
   transition: all 0.3s ease-in-out;
   color: black;
-  font-size: 1.1em; }
+  font-size: 1.5em; }
 
 span {
   display: block;
-  font-size: .7em;
+  font-size: .8em;
   color: #E31B6D; }
