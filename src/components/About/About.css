@@ -1,28 +1,88 @@
 /* Coolors Exported Palette - coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
 /*             ABOUT            */
 .about {
-  display: flex;
-  align-items: center;
   height: 100vh;
   background-color: #2b2d42;
-  color: #edf2f4; }
-  .about h1 {
-    color: #edf2f4;
-    margin: 0em 0em 1em 0em;
-    padding-top: 1.5em; }
-  .about p {
-    margin: 0; }
+  color: #edf2f4;
+  box-sizing: border-box; }
 
-.about > * {
-  text-align: center;
-  width: 90%; }
+.portrait {
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin: 0 auto;
+  background-image: url("../../images/react.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.about-title {
+  font-size: 2em;
+  padding-top: .75em;
+  font-weight: bold;
+  animation-name: slide-in-left;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease; }
+
+@keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(300px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+.react-logo {
+  display: block;
+  animation: spin infinite 20s linear;
+  width: 6em;
+  height: 6em; }
 
 .logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
+  display: block;
+  height: 6em;
+  width: 6em; }
 
-@keyframes App-logo-spin {
+@keyframes spin {
   from {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+
+.ul-about {
+  list-style: none;
+  width: 90%; }
+  .ul-about li {
+    display: inline-block;
+    margin: 0 2em;
+    color: #edf2f4;
+    animation-name: slide-in-left;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease; }
+
+@keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(300px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+#react {
+  text-decoration: none; }
+
+.fa-database {
+  display: block;
+  font-size: 4em;
+  color: #f9f9f9;
+  padding-bottom: .2em; }
+
+.about-stack {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
