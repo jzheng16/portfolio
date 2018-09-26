@@ -12,6 +12,7 @@ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 /* Sections
@@ -24,8 +25,13 @@ html {
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
+  /* font-size: calc(16px + 1vw);
+  /* leading grows along with font,
+    with an additional 0.1em + 0.5px per 100px of the viewport */
+  /* line-height: calc(1.1em + 0.5vw); */
 }
 
 /**
