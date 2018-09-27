@@ -17,7 +17,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 1em;
-  @media only screen and (min-width: 640px) {
+  @media only screen and (min-width: 676px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -84,13 +84,20 @@
   display: block;
   position: absolute;
   left: 50%;
-  top: 80%;
+  top: 70%;
   transform: translate(-50%, -20%);
   text-align: center;
   z-index: 2;
   transition: all 0.3s ease-in-out;
-  font-size: 1.1em;
-
+  font-size: .8em;
+  @media screen and (max-width:400px) {
+    font-size: .8em;
+    padding: 5px;
+    top: 60%;
+   } 
+  @media screen and (max-width:600px) {
+    top: 60%;
+   } 
 
 }
 .card:hover .title {
@@ -102,7 +109,11 @@
   z-index: 2;
   transition: all 0.3s ease-in-out;
   color: black;
-  font-size: 1.5em;
+  font-size: 1em;
+  @media screen and (max-width:400px) {
+    font-size: .8em;
+    
+   } 
 }
 
 span { 
