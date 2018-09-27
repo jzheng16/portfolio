@@ -1,7 +1,7 @@
 /* Coolors Exported Palette - coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
 /*             CONTACT           */
 .contact {
-  height: 100vh;
+  height: calc(100vh - 50px - 131px);
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -11,6 +11,9 @@
     color: #edf2f4;
     margin: 0;
     margin-bottom: 1em; }
+
+.submitted {
+  color: #edf2f4; }
 
 .contact-form {
   width: 50%;

@@ -1,13 +1,14 @@
 @import '../../palette.scss';
 
 .projects {
-  height: 100vh;
+  height: calc(80vh - 50px);
   box-sizing: border-box;
   background-color: $color1;
   color: $color3;
   h1 {
     color: $color3;
     margin: 0 0 .75em 0;
+    padding-top: 50px;
   }
 }
 
