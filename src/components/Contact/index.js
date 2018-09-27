@@ -1,35 +1,37 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Contact.css';
 
-export default () => (
-  <section id="contact" className="contact">
-    <h1>Contact</h1>
-    <ul>
-      <li>
-        <a href="https://www.github.com/jzheng16" target="_blank" rel="noopener noreferrer">
-          <span className="fa-stack fa-2x">
-            <i className="fas fa-square fa-stack-2x"></i>
-            <i className="fab fa-github fa-stack-1x fa-inverse"></i>
+class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.form = React.createRef();
+    this.handleForm = this.handleForm.bind(this);
+  }
 
-          </span>
-        </a>
-      </li>
-      <li>
-        <span className="fa-stack fa-2x">
-          <a href="https://www.linkedin.com/in/joey-zheng16/" target="_blank" rel="noopener noreferrer">
-            <i className="fas fa-square fa-stack-2x"></i>
-            <i className="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-          </a>
-        </span>
-      </li>
-      <li>
-        <span className="fa-stack fa-2x">
-          <a href="https://www.linkedin.com/in/joey-zheng16/" target="_blank" rel="noopener noreferrer">
-            <i className="fas fa-square fa-stack-2x"></i>
-            <i className="fas fa-envelope fa-stack-1x fa-inverse"></i>
-          </a>
-        </span>
-      </li>
-    </ul>
-  </section>
-);
+  handleForm(e) {
+    e.preventDefault();
+    const template_params = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      message: e.target.message.value
+    };
+    const template_id = process.env.REACT_APP_TEMPLATE_ID;
+    window.emailjs.send('default_service', template_id, template_params, process.env.REACT_APP_EMAILJS_USER_ID);
+  }
+
+  render() {
+    return (
+      <section id="contact" className="contact">
+        <h1>Contact</h1>
+        <form ref={this.form} onSubmit={this.handleForm} className="contact-form">
+          <input type="text" id="name" name="name" placeholder="Name" />
+          <input type="email" id="email" name="email" placeholder="Enter email" />
+          <textarea cols="30" rows="10" name="message" placeholder="Your message..." />
+          <button type="submit"> Submit </button>
+        </form>
+      </section>
+    );
+  }
+}
+
+export default Contact;

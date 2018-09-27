@@ -2,37 +2,49 @@
 /*             CONTACT           */
 
 .contact {
+  height: 100vh;
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   h1 {
     color: $color3;
     margin: 0;
+    margin-bottom: 1em;
   }
+}
 
-  ul {
-    list-style: none;
-    text-align: center;
-    margin-bottom: 0;
-    padding: 0;
+.contact-form {
     
-  };
+    width: 50%;
+    
+    height: auto;
+    
+    input {
+    width: 100%;
+    display: block;
+    border: 1px solid $color2;
+    padding: 10px;
+    margin-bottom: 3px;
+    }
 
-  li {
-    display: inline-block;
-    margin: 0 1em;
-  };
+    textarea {
+      padding: 10px;
+      width: 100%;
+      display: block;
+      border: 1px solid $color3;
+    }
 
-  a {
-    color: $color3;
-    text-decoration: none;
-  };
-}
-
-li:hover .fa-square {
-  transition: all .5s;
-  transform: scale(1.1);
-  color: $color6;
-}
-.fa-square {
-  color: $color2;
+    button {
+      display: block;
+      margin-top: .5em;
+      float: right;
+      border: 1px solid $color3;
+      background-color: transparent;
+      color: $color3;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
 }

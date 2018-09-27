@@ -1,26 +1,37 @@
 /* Coolors Exported Palette - coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
 /*             CONTACT           */
 .contact {
-  background-color: black; }
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   .contact h1 {
     color: #edf2f4;
-    margin: 0; }
-  .contact ul {
-    list-style: none;
-    text-align: center;
-    margin-bottom: 0;
-    padding: 0; }
-  .contact li {
-    display: inline-block;
-    margin: 0 1em; }
-  .contact a {
+    margin: 0;
+    margin-bottom: 1em; }
+
+.contact-form {
+  width: 50%;
+  height: auto; }
+  .contact-form input {
+    width: 100%;
+    display: block;
+    border: 1px solid #8d99ae;
+    padding: 10px;
+    margin-bottom: 3px; }
+  .contact-form textarea {
+    padding: 10px;
+    width: 100%;
+    display: block;
+    border: 1px solid #edf2f4; }
+  .contact-form button {
+    display: block;
+    margin-top: .5em;
+    float: right;
+    border: 1px solid #edf2f4;
+    background-color: transparent;
     color: #edf2f4;
-    text-decoration: none; }
-
-li:hover .fa-square {
-  transition: all .5s;
-  transform: scale(1.1);
-  color: #40e0d0; }
-
-.fa-square {
-  color: #8d99ae; }
+    padding: 5px 10px;
+    cursor: pointer; }
