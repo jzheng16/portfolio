@@ -8,20 +8,6 @@
   box-sizing: border-box;
 }
 
-.portrait {
-  width: 7em;
-  height: 7em;
-  border-radius: 50%;
-  border: 1px solid white;
-  margin: 0 auto;
-  background-image: url('../../images/react.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  
-
-}
-
 .about-title {
   font-size: 2em;
   //margin: 0em 0em 1em 0em;
@@ -44,6 +30,22 @@
   }
 }
 
+.portrait {
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin: 0 auto;
+  background-image: url('../../images/portrait1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro {
+  width: 90%;
+  margin: 0 auto;
+}
 
 .react-logo {
   display: block;
@@ -93,6 +95,7 @@ to {
 
 #react {
   text-decoration: none;
+  color: $color6;
 }
 
 .fa-database {

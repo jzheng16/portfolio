@@ -6,17 +6,6 @@
   color: #edf2f4;
   box-sizing: border-box; }
 
-.portrait {
-  width: 7em;
-  height: 7em;
-  border-radius: 50%;
-  border: 1px solid white;
-  margin: 0 auto;
-  background-image: url("../../images/react.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-
 .about-title {
   font-size: 2em;
   padding-top: .75em;
@@ -34,6 +23,21 @@
   100% {
     opacity: 1;
     transform: translateX(0px); } }
+
+.portrait {
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin: 0 auto;
+  background-image: url("../../images/portrait1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.intro {
+  width: 90%;
+  margin: 0 auto; }
 
 .react-logo {
   display: block;
@@ -74,7 +78,8 @@
     transform: translateX(0px); } }
 
 #react {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #40e0d0; }
 
 .fa-database {
   display: block;

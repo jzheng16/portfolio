@@ -2,6 +2,33 @@
 
 footer {
   background-color: black;
+  ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    
+  };
+
+  li {
+    display: inline-block;
+    margin: 0 1em;
+  };
+
+  a {
+    color: $color3;
+    text-decoration: none;
+  };
+}
+
+li:hover .fa-square {
+  transition: all .5s;
+  transform: scale(1.1);
+  color: $color6;
+}
+.fa-square {
+  color: $color2;
 }
 
 #copyright {
@@ -10,3 +37,6 @@ footer {
   padding-bottom: 1em;
   font-size: .7em;
 }
+
+
+
