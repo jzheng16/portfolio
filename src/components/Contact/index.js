@@ -6,6 +6,7 @@ class Contact extends Component {
     super(props);
     this.form = React.createRef();
     this.handleForm = this.handleForm.bind(this);
+    this.state = { formSubmitted: false };
   }
 
   handleForm(e) {
@@ -16,19 +17,30 @@ class Contact extends Component {
       message: e.target.message.value
     };
     const template_id = process.env.REACT_APP_TEMPLATE_ID;
-    window.emailjs.send('default_service', template_id, template_params, process.env.REACT_APP_EMAILJS_USER_ID);
+    window.emailjs.send('default_service', template_id, template_params, process.env.REACT_APP_EMAILJS_USER_ID)
+      .then(() => {
+        this.setState({ formSubmitted: true });
+      })
+      .catch(err => console.error('error submitting form'));
   }
 
   render() {
+    const { formSubmitted } = this.state;
     return (
       <section id="contact" className="contact">
         <h1>Contact</h1>
-        <form ref={this.form} onSubmit={this.handleForm} className="contact-form">
-          <input type="text" id="name" name="name" placeholder="Name" />
-          <input type="email" id="email" name="email" placeholder="Enter email" />
-          <textarea cols="30" rows="10" name="message" placeholder="Your message..." />
-          <button type="submit"> Submit </button>
-        </form>
+        {formSubmitted
+          ? <div className="submitted">Thank you submitting your form. I will get back to you shortly.</div>
+          : (
+            <form ref={this.form} onSubmit={this.handleForm} className="contact-form">
+              <input type="text" id="name" name="name" placeholder="Name" required />
+              <input type="email" id="email" name="email" placeholder="Enter email" required />
+              <textarea cols="30" rows="10" name="message" placeholder="Your message..." required />
+              <button type="submit"> Submit </button>
+            </form>
+          )
+        }
+
       </section>
     );
   }

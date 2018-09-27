@@ -2,7 +2,7 @@
 /*             ABOUT            */
 
 .about {
-  height: 100vh;
+  height: calc(100vh - 50px);
   background-color: $color1;
   color: $color3;
   box-sizing: border-box;
@@ -11,7 +11,7 @@
 .about-title {
   font-size: 2em;
   //margin: 0em 0em 1em 0em;
-  padding-top: .75em;
+  padding-top: 50px;
   font-weight: bold;
   animation-name: slide-in-left;
   animation-delay: 0s;

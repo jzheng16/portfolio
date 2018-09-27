@@ -8,6 +8,7 @@ module.exports = {
     "react/prop-types": 0,
     "camelcase": 0,
     "max-len": 0,
+    "class-methods-use-this": 0,
     "indentSwitchCase": true,
     "react/self-closing-comp": 0,
     "no-console": 0,

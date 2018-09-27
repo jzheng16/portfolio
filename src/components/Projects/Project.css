@@ -1,12 +1,13 @@
 /* Coolors Exported Palette - coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
 .projects {
-  height: 60vh;
+  height: calc(80vh - 50px);
   box-sizing: border-box;
   background-color: #2b2d42;
   color: #edf2f4; }
   .projects h1 {
     color: #edf2f4;
-    margin: 0 0 .75em 0; }
+    margin: 0 0 .75em 0;
+    padding-top: 50px; }
 
 .gallery {
   background-color: #2b2d42;

@@ -1,14 +1,14 @@
 /* Coolors Exported Palette - coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
 /*             ABOUT            */
 .about {
-  height: 100vh;
+  height: calc(100vh - 50px);
   background-color: #2b2d42;
   color: #edf2f4;
   box-sizing: border-box; }
 
 .about-title {
   font-size: 2em;
-  padding-top: .75em;
+  padding-top: 50px;
   font-weight: bold;
   animation-name: slide-in-left;
   animation-delay: 0s;
