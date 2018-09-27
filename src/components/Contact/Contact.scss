@@ -1,5 +1,4 @@
 @import '../../palette.scss';
-/*             CONTACT           */
 
 .contact {
   height: calc(100vh - 50px - 131px);
@@ -12,7 +11,8 @@
   h1 {
     color: $color3;
     margin: 0;
-    margin-bottom: 1em;
+    margin-top: .5em;
+    
   }
 }
 
@@ -23,9 +23,16 @@
 .contact-form {
     
     width: 50%;
-    
+    margin-top: 1em;
     height: auto;
-    
+    @media screen and (max-width: 600px) {
+      width: 60%;
+      
+    }
+     @media screen and (min-width: 1000px) {
+      width: 40%;
+      
+    }
     input {
     width: 100%;
     display: block;
@@ -50,7 +57,13 @@
       border: 1px solid $color3;
       background-color: transparent;
       color: $color3;
-      padding: 5px 10px;
+      padding: 10px 20px;
+      transition: all .5s;
       cursor: pointer;
+    }
+    button:hover {
+      background-color: $color6;
+      border: 1px solid $color6;
+      
     }
 }

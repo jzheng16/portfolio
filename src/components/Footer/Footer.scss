@@ -1,13 +1,15 @@
 @import '../../palette.scss';
 
 footer {
-  background-color: black;
+  background-color: $color1;
+  position: relative;
   ul {
     list-style: none;
     text-align: center;
-    margin-top: 0;
+    padding: 2em 0 0 0;
     margin-bottom: 0;
-    padding: 0;
+    margin-top: 0;
+
     
   };
 
@@ -36,6 +38,27 @@ li:hover .fa-square {
   margin: 0 0;
   padding-bottom: 1em;
   font-size: .7em;
+}
+
+#return-to-home {
+  display: block;
+  margin-bottom: 2em;
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+ 
+}
+
+.far {
+  font-size: 3em;
+  
+}
+.far:hover {
+  transform: scale(1.2);
+  color: $color6;
+  transition: all .5s;
 }
 
 

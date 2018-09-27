@@ -9,20 +9,7 @@
 .about-title {
   font-size: 2em;
   padding-top: 50px;
-  font-weight: bold;
-  animation-name: slide-in-left;
-  animation-delay: 0s;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease; }
-
-@keyframes slide-in-left {
-  0% {
-    opacity: 0;
-    transform: translateX(300px); }
-  100% {
-    opacity: 1;
-    transform: translateX(0px); } }
+  font-weight: bold; }
 
 .portrait {
   width: 7em;
@@ -45,16 +32,16 @@
   width: 6em;
   height: 6em; }
 
-.logo {
-  display: block;
-  height: 6em;
-  width: 6em; }
-
 @keyframes spin {
   from {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+
+.logo {
+  display: block;
+  height: 6em;
+  width: 6em; }
 
 .ul-about {
   list-style: none;
@@ -62,20 +49,7 @@
   .ul-about li {
     display: inline-block;
     margin: 0 2em;
-    color: #edf2f4;
-    animation-name: slide-in-left;
-    animation-delay: 0s;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease; }
-
-@keyframes slide-in-left {
-  0% {
-    opacity: 0;
-    transform: translateX(300px); }
-  100% {
-    opacity: 1;
-    transform: translateX(0px); } }
+    color: #edf2f4; }
 
 #react {
   text-decoration: none;

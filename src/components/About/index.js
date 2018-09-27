@@ -6,8 +6,18 @@ import NodeJSLogo from '../../images/Node.js_logo.svg';
 
 export default () => (
   <section id="about" className="about">
-    <div className="about-title"> About </div>
-    <div className="portrait">
+    <div
+      className="about-title"
+      data-aos="fade-right"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+    >
+      About
+    </div>
+    <div
+      className="portrait"
+    >
     </div>
 
     <div className="intro">
@@ -21,15 +31,33 @@ export default () => (
 
     <div className="about-stack">
       <ul className="ul-about">
-        <li className="about-item">
+        <li
+          className="about-item"
+          data-aos="flip-right"
+          data-aos-offset="200"
+          data-aos-delay="0"
+          data-aos-duration="750"
+        >
           <img src={reactLogo} className="react-logo" alt="React Logo" />
           React/Redux
         </li>
-        <li className="about-item">
+        <li
+          className="about-item"
+          data-aos="flip-right"
+          data-aos-offset="200"
+          data-aos-delay="250"
+          data-aos-duration="750"
+        >
           <img src={NodeJSLogo} className="logo" alt="Node Logo" height="70px" />
           NodeJS
         </li>
-        <li className="about-item">
+        <li
+          className="about-item"
+          data-aos="flip-left"
+          data-aos-offset="200"
+          data-aos-delay="500"
+          data-aos-duration="750"
+        >
           <i className="fas fa-database"></i>
           Postgres/MongoDB
         </li>

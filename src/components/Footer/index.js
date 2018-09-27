@@ -3,6 +3,9 @@ import './Footer.css';
 
 export default () => (
   <footer>
+    <a id="return-to-home" href="#top">
+      <i className="far fa-arrow-alt-circle-up"></i>
+    </a>
     <ul>
       <li>
         <a href="https://www.github.com/jzheng16" target="_blank" rel="noopener noreferrer">

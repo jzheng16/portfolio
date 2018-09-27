@@ -1,12 +1,13 @@
 /* Coolors Exported Palette - coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
 footer {
-  background-color: black; }
+  background-color: #2b2d42;
+  position: relative; }
   footer ul {
     list-style: none;
     text-align: center;
-    margin-top: 0;
+    padding: 2em 0 0 0;
     margin-bottom: 0;
-    padding: 0; }
+    margin-top: 0; }
   footer li {
     display: inline-block;
     margin: 0 1em; }
@@ -27,3 +28,19 @@ li:hover .fa-square {
   margin: 0 0;
   padding-bottom: 1em;
   font-size: .7em; }
+
+#return-to-home {
+  display: block;
+  margin-bottom: 2em;
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  transform: translate(-50%, 0%); }
+
+.far {
+  font-size: 3em; }
+
+.far:hover {
+  transform: scale(1.2);
+  color: #40e0d0;
+  transition: all .5s; }
