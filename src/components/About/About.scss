@@ -10,8 +10,8 @@
 
 .about-title {
   font-size: 2em;
-  //margin: 0em 0em 1em 0em;
-  padding-top: 50px;
+  margin: 0em 0em 1em 0em;
+  padding-top: 2em;
   font-weight: bold;
   // animation-name: slide-in-left;
   // animation-delay: 0s;
@@ -42,8 +42,15 @@
   background-repeat: no-repeat;
 }
 
+.about-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+  
+}
+
 .intro {
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -109,8 +116,8 @@
 }
 
 .about-stack {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 
 }
