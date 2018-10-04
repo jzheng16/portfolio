@@ -31,11 +31,14 @@ export default () => (
         </p>
       </div>
 
-      <div className="about-stack column-2">
-        <p> The tools that I am currently working with to build my applications consist of: </p>
-        <ul className="ul-about">
-          <li
-            className="about-item"
+      <div className="stack">
+        <div className="stack-title">
+          The tools that I am currently working with to build my applications consist of:
+        </div>
+        <div className="about-stack column-2">
+
+          <div
+            className="about-item flex"
             data-aos="flip-right"
             data-aos-offset="200"
             data-aos-delay="0"
@@ -43,9 +46,9 @@ export default () => (
           >
             <img src={reactLogo} className="react-logo" alt="React Logo" />
             React/Redux
-          </li>
-          <li
-            className="about-item"
+          </div>
+          <div
+            className="about-item flex"
             data-aos="flip-right"
             data-aos-offset="200"
             data-aos-delay="250"
@@ -53,50 +56,49 @@ export default () => (
           >
             <img src={NodeJSLogo} className="logo" alt="Node Logo" height="70px" />
             NodeJS
-          </li>
-          <li
-            className="about-item"
+          </div>
+          <div
+            className="about-item flex"
             data-aos="flip-left"
             data-aos-offset="200"
             data-aos-delay="500"
             data-aos-duration="750"
           >
             <i className="fas fa-database"></i>
-            Postgres/MongoDB
-          </li>
-        </ul>
-        <ul className="ul-about">
-          <li
-            className="about-item"
+            Postgres
+          </div>
+
+          <div
+            className="about-item flex"
             data-aos="flip-right"
             data-aos-offset="200"
             data-aos-delay="0"
             data-aos-duration="750"
           >
-            <img src={sassLogo} className="logo" alt="Sass Logo" />
+            <img src={sassLogo} className="png-logo" alt="Sass Logo" />
             Sass
-          </li>
-          <li
-            className="about-item"
+          </div>
+          <div
+            className="about-item flex"
             data-aos="flip-right"
             data-aos-offset="200"
             data-aos-delay="250"
             data-aos-duration="750"
           >
-            <img src={webpackLogo} className="logo" alt="Webpack Logo" />
+            <img src={webpackLogo} className="png-logo" alt="Webpack Logo" />
             Webpack
-          </li>
-          <li
-            className="about-item"
+          </div>
+          <div
+            className="about-item flex"
             data-aos="flip-left"
             data-aos-offset="200"
             data-aos-delay="500"
             data-aos-duration="750"
           >
-            <img src={HTML5} className="logo" alt="HTML5 Logo" />
+            <img src={HTML5} className="png-logo" alt="HTML5 Logo" />
             HTML5
-          </li>
-        </ul>
+          </div>
+        </div>
 
       </div>
     </div>

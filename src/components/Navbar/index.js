@@ -22,6 +22,9 @@ export default class NavbarContainer extends Component {
     this.setState({});
   }
 
+  // TODO: Anything below 630px will render hamburger menu
+
+
   render() {
     stickybits('#some-stickybit-nav');
     return (

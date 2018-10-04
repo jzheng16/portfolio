@@ -1,16 +1,14 @@
 @import '../../palette.scss';
 
-nav {
+.container-nav {
   background-color: black;
-
   display: flex;
   height: 50px;
- 
   justify-content: center;;
   align-items: center;
   z-index: 3;
-  // position: sticky;
-  // top: 0;
+  position: sticky;
+  top: 0;
 
   ul {
     list-style: none;
@@ -28,8 +26,8 @@ nav {
   }
 
   a:hover, a:active {
-    color: black;
-    background-color: $color6;
+    color: $color6;
+    //background-color: $color6;
   }
 
   li:first-child {
@@ -37,6 +35,85 @@ nav {
     
   }
 }
+
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 1em;
+  height: 1em;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: $color3;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    position: fixed !important;
+    width: 2em !important;
+    height: 2em !important;
+    left: 170px !important;
+    z-index: 1000 !important;
+    top: 10px !important;
+
+}
+
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #373a47;
+  color: white;
+ 
+}
+
+/* General sidebar styles */
+.bm-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30vh;
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  z-index: 100;
+  transition: all 1s;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: block;
+  margin-bottom: 1em;
+  font-size: 1.3em;
+}
+
+
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
 
 
 
