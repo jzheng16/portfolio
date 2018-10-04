@@ -1,7 +1,5 @@
 /* Coolors Exported Palette - coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
-/*             ABOUT            */
 .about {
-  height: calc(100vh - 50px);
   background-color: #2b2d42;
   color: #edf2f4;
   box-sizing: border-box; }
@@ -11,6 +9,25 @@
   margin: 0em 0em 1em 0em;
   padding-top: 2em;
   font-weight: bold; }
+  @media screen and (max-width: 768px) {
+    .about-title {
+      padding-top: 1em; } }
+
+.about-body {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em; }
+  @media screen and (max-width: 500px) {
+    .about-body {
+      grid-template-columns: 1fr; } }
+
+.intro {
+  width: 70%;
+  margin: 0 auto; }
+  @media screen and (max-width: 500px) {
+    .intro {
+      width: 85%; } }
 
 .portrait {
   width: 7em;
@@ -23,39 +40,79 @@
   background-position: center;
   background-repeat: no-repeat; }
 
-.about-body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 1em; }
+.stack-title {
+  margin-bottom: 1em; }
+  @media screen and (max-width: 500px) {
+    .stack-title {
+      width: 85%;
+      margin: 0 auto;
+      margin-bottom: 1em; } }
 
-.intro {
-  width: 70%;
-  margin: 0 auto; }
+.about-stack {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-row-gap: 1em; }
+  @media screen and (max-width: 500px) {
+    .about-stack {
+      grid-template-columns: 1fr 1fr 1fr; } }
+  @media screen and (min-width: 501px) and (max-width: 768px) {
+    .about-stack {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr; } }
+
+.ul-about {
+  width: 100%;
+  text-align: center; }
+  .ul-about div {
+    margin: 0em 1em 1em 1em;
+    width: 30%;
+    color: #edf2f4;
+    margin: 0 auto;
+    background-color: #000000; }
+    @media screen and (max-width: 768px) {
+      .ul-about div {
+        font-size: 12em; } }
 
 .react-logo {
   display: block;
+  margin: 0 auto;
   animation: spin infinite 20s linear;
-  width: 6em;
-  height: 6em; }
+  width: 5em;
+  height: 5em; }
 
 @keyframes spin {
   from {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+  @media screen and (max-width: 768px) {
+    .react-logo {
+      height: 4em;
+      width: 4em; } }
 
 .logo {
   display: block;
-  height: 6em;
-  width: 6em; }
+  margin: 0 auto;
+  height: 5em;
+  width: 5em; }
+  @media screen and (max-width: 768px) {
+    .logo {
+      height: 4em;
+      width: 4em; } }
 
-.ul-about {
-  list-style: none;
-  width: 90%; }
-  .ul-about li {
-    display: inline-block;
-    margin: 0 2em;
-    color: #edf2f4; }
+.png-logo {
+  display: block;
+  margin: 0 auto;
+  height: 4em;
+  width: 4em; }
+  @media screen and (max-width: 768px) {
+    .png-logo {
+      height: 3em;
+      width: 3em; } }
 
 #react {
   text-decoration: none;
@@ -66,3 +123,6 @@
   font-size: 4em;
   color: #f9f9f9;
   padding-bottom: .2em; }
+  @media screen and (max-width: 768px) {
+    .fa-database {
+      font-size: 3em; } }

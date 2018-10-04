@@ -1,6 +1,5 @@
 /* Coolors Exported Palette - coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
 .projects {
-  height: calc(80vh - 50px);
   box-sizing: border-box;
   background-color: #2b2d42;
   color: #edf2f4; }
@@ -8,6 +7,9 @@
     color: #edf2f4;
     margin: 0 0 .75em 0;
     padding-top: 50px; }
+  @media only screen and (max-width: 676px) {
+    .projects {
+      height: calc(70vh - 50px); } }
 
 .gallery {
   background-color: #2b2d42;

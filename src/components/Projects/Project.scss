@@ -1,7 +1,7 @@
 @import '../../palette.scss';
 
 .projects {
-  height: calc(80vh - 50px);
+  //height: calc(120vh - 50px);
   box-sizing: border-box;
   background-color: $color1;
   color: $color3;
@@ -9,6 +9,9 @@
     color: $color3;
     margin: 0 0 .75em 0;
     padding-top: 50px;
+  }
+  @media only screen and (max-width: 676px) {
+    height: calc(70vh - 50px);
   }
 }
 
