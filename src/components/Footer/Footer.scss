@@ -44,11 +44,13 @@ li:hover .fa-square {
   display: block;
   margin-bottom: 2em;
   position: absolute;
-  top: -25%;
+  top: -18%;
   left: 50%;
   transform: translate(-50%, 0%);
 
- 
+  @media screen and (max-width: 400px) {
+    transform: translate(-60%, 0%);
+  }
 }
 
 .far {
