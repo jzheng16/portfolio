@@ -10,6 +10,8 @@
   position: sticky;
   top: 0;
 
+  nav {}
+
   ul {
     list-style: none;
   }
@@ -39,60 +41,89 @@
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 1em;
-  height: 1em;
+  position: absolute !important;
+  top: 10px!important; 
+  left: 10px!important ;
+  width: 1em !important;
+  height: 1em!important;
+ 
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: $color3;
+  background: white !important;
+  opacity: 1 !important;
+  height: 27% !important;
+
 }
 
-/* Position and sizing of clickable cross button */
+.bm-burger-bars:nth-child(1) {
+  top: 10% !important;
+}
+.bm-burger-bars:nth-child(2) {
+  top: 60% !important;
+}
+.bm-burger-bars:nth-child(3) {
+  top: 110% !important;
+}
+
+// /* Position and sizing of clickable cross button */
 .bm-cross-button {
-    position: fixed !important;
-    width: 2em !important;
-    height: 2em !important;
-    left: 170px !important;
-    z-index: 1000 !important;
-    top: 10px !important;
+    
+    color: red;
 
 }
 
 
-/* Color/shape of close button cross */
-.bm-cross {
-  background: #373a47;
-  color: white;
+// /* Color/shape of close button cross */
+// .bm-cross {
+//   background: #373a47;
+//   color: white;
  
+// }
+
+.bm-cross-button {
+  height: 50px !important;
+  width: 50px !important;
+  
 }
 
-/* General sidebar styles */
-.bm-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 30vh;
-  background: #373a47;
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
-  z-index: 100;
-  transition: all 1s;
+.bm-cross {
+  background: $color3 !important;
+  right: 16px !important;
+  top: 16px !important;
+  &:nth-child(1) {
+    transform: rotate(45deg) scale(1.5) !important; 
+  }
+  &:nth-child(2) {
+    transform: rotate(-45deg) scale(1.5) !important; 
+    
+  }
 }
 
-/* Morph shape necessary with bubble or elastic */
-.bm-morph-shape {
-  fill: #373a47;
-}
+// /* General sidebar styles */
+// .bm-menu {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 30vh;
+//   background: #373a47;
+//   padding: 2.5em 1.5em 0;
+//   font-size: 1.15em;
+//   z-index: 100;
+//   transition: all 1s;
+// }
 
-/* Wrapper for item list */
-.bm-item-list {
-  color: #b8b7ad;
-  padding: 0.8em;
-}
+// /* Morph shape necessary with bubble or elastic */
+// .bm-morph-shape {
+//   fill: #373a47;
+// }
+
+// /* Wrapper for item list */
+// .bm-item-list {
+//   color: #b8b7ad;
+//   padding: 0.8em;
+// }
 
 /* Individual item */
 .bm-item {
@@ -103,13 +134,21 @@
 
 
 
-/* Styling of overlay */
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+// /* Styling of overlay */
+// .bm-overlay {
+//   background: rgba(0, 0, 0, 0.3);
+// }
+
+
+.bm-menu-wrap {
+  position: absolute !important;
+  top: 0;
+  left: -30px;
+  bottom: 0;
+  height: 100vh !important;
+  width: 70% !important;
+  margin-top: 3em;
 }
-
-
-
 
 
 

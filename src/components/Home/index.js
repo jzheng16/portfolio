@@ -3,7 +3,7 @@ import './Home.css';
 import About from '../About';
 import Projects from '../Projects';
 import Contact from '../Contact';
-import Navbar from '../Navbar/HamburgerNav';
+import Navbar from '../Navbar';
 
 export default () => (
   <div className="home">
