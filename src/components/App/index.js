@@ -1,8 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import AOS from 'aos';
 import './App.css';
-import Home from '../Home';
+import LandingPage from '../LandingPage';
 import 'aos/dist/aos.css';
+import About from '../About';
+import Projects from '../Projects';
+import Contact from '../Contact';
+import Navbar from '../Navbar';
 import Footer from '../Footer';
 
 AOS.init({
@@ -22,16 +26,13 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-
-        <Home />
-        <Footer />
-      </div>
-    );
-  }
-}
-
-export default App;
+export default () => (
+  <div className="App">
+    <LandingPage />
+    <Navbar />
+    <About />
+    <Projects />
+    <Contact />
+    <Footer />
+  </div>
+);
