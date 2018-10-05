@@ -46,9 +46,6 @@
   top: 110% !important; }
 
 .bm-cross-button {
-  color: red; }
-
-.bm-cross-button {
   height: 50px !important;
   width: 50px !important; }
 
@@ -61,11 +58,24 @@
   .bm-cross:nth-child(2) {
     transform: rotate(-45deg) scale(1.5) !important; }
 
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em;
+  font-size: 1.15em; }
+
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em; }
+
 /* Individual item */
 .bm-item {
   display: block;
   margin-bottom: 1em;
   font-size: 1.3em; }
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3); }
 
 .bm-menu-wrap {
   position: absolute !important;
