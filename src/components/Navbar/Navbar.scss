@@ -10,8 +10,6 @@
   position: sticky;
   top: 0;
 
-  nav {}
-
   ul {
     list-style: none;
   }
@@ -37,7 +35,6 @@
     
   }
 }
-
 
 /* Position and sizing of burger button */
 .bm-burger-button {
@@ -69,23 +66,8 @@
 
 // /* Position and sizing of clickable cross button */
 .bm-cross-button {
-    
-    color: red;
-
-}
-
-
-// /* Color/shape of close button cross */
-// .bm-cross {
-//   background: #373a47;
-//   color: white;
- 
-// }
-
-.bm-cross-button {
   height: 50px !important;
   width: 50px !important;
-  
 }
 
 .bm-cross {
@@ -102,28 +84,17 @@
 }
 
 // /* General sidebar styles */
-// .bm-menu {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 30vh;
-//   background: #373a47;
-//   padding: 2.5em 1.5em 0;
-//   font-size: 1.15em;
-//   z-index: 100;
-//   transition: all 1s;
-// }
-
-// /* Morph shape necessary with bubble or elastic */
-// .bm-morph-shape {
-//   fill: #373a47;
-// }
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em;
+  font-size: 1.15em;
+ }
 
 // /* Wrapper for item list */
-// .bm-item-list {
-//   color: #b8b7ad;
-//   padding: 0.8em;
-// }
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
 
 /* Individual item */
 .bm-item {
@@ -134,10 +105,10 @@
 
 
 
-// /* Styling of overlay */
-// .bm-overlay {
-//   background: rgba(0, 0, 0, 0.3);
-// }
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
 
 
 .bm-menu-wrap {
