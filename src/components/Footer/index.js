@@ -26,9 +26,9 @@ export default () => (
       </li>
       <li>
         <span className="fa-stack fa-2x">
-          <a href="https://www.linkedin.com/in/joey-zheng16/" target="_blank" rel="noopener noreferrer">
+          <a href="https://stackoverflow.com/users/7712898/jxzheng16" target="_blank" rel="noopener noreferrer">
             <i className="fas fa-square fa-stack-2x"></i>
-            <i className="fas fa-envelope fa-stack-1x fa-inverse"></i>
+            <i className="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
           </a>
         </span>
       </li>
