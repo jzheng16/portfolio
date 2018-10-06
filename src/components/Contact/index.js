@@ -21,7 +21,7 @@ class Contact extends Component {
       .then(() => {
         this.setState({ formSubmitted: true });
       })
-      .catch(err => console.error('error submitting form'));
+      .catch(err => console.error('error submitting form ', err));
   }
 
   render() {

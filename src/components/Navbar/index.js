@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Navbar.css';
-import Menu from 'react-burger-menu/lib/menus/slide';
+import Menu from 'react-burger-menu/lib/menus/stack';
 import resume from '../../images/Zheng_Joey_Resume.pdf';
 
 export default class NavbarContainer extends Component {
