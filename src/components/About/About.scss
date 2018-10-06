@@ -1,7 +1,7 @@
 @import '../../palette.scss';
 
 .about {
-  height: calc(100vh - 50px);
+  //height: calc(100vh - 50px);
   background-color: $color1;
   color: $color3;
   box-sizing: border-box;
@@ -47,10 +47,6 @@
   background-repeat: no-repeat;
 }
 
-.stack {
-  
-}
-
 .stack-title {
   margin-bottom: 1em;
    @media screen and (max-width: 500px) {
@@ -59,7 +55,6 @@
     margin-bottom: 1em;
   } 
 }
-
 
 .about-stack {
   display: grid;
