@@ -1,5 +1,9 @@
 @import '../../palette.scss';
 
+.home {
+  
+}
+
 header {
   display: flex;
   align-items: center;
@@ -8,8 +12,6 @@ header {
   height: 100vh;
   overflow: hidden;
   text-align: center;
-
-  
 }
 
 header:after {
@@ -24,12 +26,13 @@ header:after {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
-  filter: blur(5px);
+  filter: blur(10px);
   transition: all 1s;
   height: 100vh;
+  width: 100%;
 }
 
-header:hover::before{
+header:hover::after{
   filter: blur(0px);
 }
 

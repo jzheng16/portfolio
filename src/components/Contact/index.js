@@ -28,6 +28,7 @@ class Contact extends Component {
     const { formSubmitted } = this.state;
     return (
       <section id="contact" className="contact">
+
         <h1
           data-aos="fade-right"
           data-aos-offset="200"
