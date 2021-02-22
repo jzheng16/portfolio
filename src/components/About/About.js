@@ -10,10 +10,10 @@ export default () => (
   <section id="about" className="about">
     <div
       className="about-title"
-      data-aos="fade-right"
-      data-aos-offset="200"
-      data-aos-delay="50"
-      data-aos-duration="1000"
+    // data-aos="fade-right"
+    // data-aos-offset="200"
+    // data-aos-delay="50"
+    // data-aos-duration="1000"
     >
       About
     </div>
@@ -24,19 +24,17 @@ export default () => (
       <div className="intro column-1">
         <div className="portrait">
         </div>
-        <p>
-          A software developer who&apos;s trying to make it in the world. I specialize in building applications with
-          <a id="react" href="https://reactjs.org/" target="_blank" rel="noopener noreferrer"> React </a>
-          but I am always looking for new technologies to use and incorporate in my projects.
-        </p>
+        <p>Based in NYC</p>
+        <p>Developer at RIA In A Box</p>
+        <p>Maintainer of  <a href="https://gandgwebstore.com" target="_blank" rel="noopener noreferrer">G&G Webstore</a></p>
+        <p>Freelance Tutor</p>
       </div>
 
-      <div className="stack">
+      {/* <div className="stack">
         <div className="stack-title">
           The tools that I am currently working with to build my applications consist of:
         </div>
         <div className="about-stack column-2">
-
           <div
             className="about-item flex"
             data-aos="flip-right"
@@ -98,9 +96,9 @@ export default () => (
             <img src={HTML5} className="png-logo" alt="HTML5 Logo" />
             HTML5
           </div>
-        </div>
+        </div> */}
 
-      </div>
+      {/* </div> */}
     </div>
 
 

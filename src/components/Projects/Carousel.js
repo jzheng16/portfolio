@@ -5,6 +5,9 @@ import pic2 from '../../images/Reacto.png';
 import pic3 from '../../images/MFP1.png';
 import pic4 from '../../images/html5.png';
 import pic5 from '../../images/sass.png';
+import pic6 from '../../images/gg-1.jpg';
+import pic7 from '../../images/gg-2.jpg';
+import pic8 from '../../images/gg-3.jpg';
 
 class Carousel extends Component {
   constructor(props) {
@@ -42,9 +45,14 @@ class Carousel extends Component {
     const gallery = {
       MyFitnessClone: [pic1, pic2, pic3],
       QuizNOS: [pic1, pic2, pic5],
-      'REACTO Platform': [pic1, pic2, pic4]
+      'REACTO Platform': [pic1, pic2, pic4],
+      'G&G Distributors': [pic6, pic7, pic8]
     };
-    const { project: { title, tag, details, github } } = this.props;
+    const {
+      project: {
+        title, tag, details, github, link
+      }
+    } = this.props;
     const { currentIndex } = this.state;
     return (
       <div className="carousel">
@@ -73,12 +81,26 @@ class Carousel extends Component {
           <div className="project-title">{title}</div>
           <div className="tag">{tag}</div>
           <div className="details">{details}</div>
-          <div className="github-link">
-            <a href={github} target="_blank" rel="noopener noreferrer">
-              <i className="git-icon fab fa-github"></i>
+          {github
+            && (
+              <div className="github-link">
+                <a href={github} target="_blank" rel="noopener noreferrer">
+                  <i className="git-icon fab fa-github"></i>
               &nbsp;View Github
-            </a>
-          </div>
+                </a>
+              </div>
+            )
+          }
+          {
+            link && (
+              <div className="github-link">
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                  <i className="git-icon fas fa-shopping-cart"></i>
+              &nbsp;Shop Now
+                </a>
+              </div>
+            )
+          }
         </div>
 
         <ul className="carousel-indicators">

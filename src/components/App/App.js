@@ -1,13 +1,8 @@
 import React from 'react';
 import AOS from 'aos';
 import './App.css';
-import LandingPage from '../LandingPage';
-import 'aos/dist/aos.css';
-import About from '../About';
-import Projects from '../Projects';
-import Contact from '../Contact';
-import Navbar from '../Navbar';
-import Footer from '../Footer';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from '../../Routes';
 
 AOS.init({
   // Global settings
@@ -28,11 +23,8 @@ AOS.init({
 
 export default () => (
   <div className="App">
-    <LandingPage />
-    <Navbar />
-    <About />
-    <Projects />
-    <Contact />
-    <Footer />
+    <Router>
+      <Routes />
+    </Router>
   </div>
 );

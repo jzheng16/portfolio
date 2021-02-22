@@ -18,7 +18,7 @@
     "emailjs": "^2.2.0",
     "gh-pages": "^1.2.0",
     "merge": "^1.2.1",
-    "node-sass-chokidar": "^1.3.3",
+    "node-sass-chokidar": "^1.5.0",
     "react": "^16.5.0",
     "react-burger-menu": "^2.5.3",
     "react-dom": "^16.5.0",

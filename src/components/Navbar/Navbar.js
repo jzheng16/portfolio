@@ -40,11 +40,12 @@ export default class NavbarContainer extends Component {
                 noOverlay
                 isOpen={menuOpen}
               >
-                <a onClick={this.closeMenu} href="#top"> Home </a>
-                <a onClick={this.closeMenu} href="#about"> About </a>
-                <a onClick={this.closeMenu} href="#projects"> Projects </a>
-                <a onClick={this.closeMenu} href="#contact"> Contact </a>
-                <a onClick={this.closeMenu} href={resume} target="_blank" rel="noopener noreferrer">  Resume </a>
+                <a onClick={this.closeMenu} href="#top">Home</a>
+                <a onClick={this.closeMenu} href="/blog">Blog</a>
+                <a onClick={this.closeMenu} href="#about">About</a>
+                <a onClick={this.closeMenu} href="#projects">Projects</a>
+                <a onClick={this.closeMenu} href="#contact">Contact</a>
+                <a onClick={this.closeMenu} href={resume} target="_blank" rel="noopener noreferrer">Resume</a>
               </Menu>
             </nav>
           )
@@ -53,12 +54,13 @@ export default class NavbarContainer extends Component {
               <ul className="nav-list sticky">
 
                 <li className="nav-item">
-                  <a href="#top"> Home </a>
+                  <a href="#top">Home</a>
                 </li>
-                <li className="nav-item"><a href="#about"> About </a></li>
-                <li className="nav-item"><a href="#projects"> Projects </a></li>
-                <li className="nav-item"><a href="#contact"> Contact </a></li>
-                <li className="nav-item"><a href={resume} target="_blank" rel="noopener noreferrer">  Resume </a></li>
+                <li className="nav-item"><a href="/blog">Blog</a></li>
+                <li className="nav-item"><a href="#about">About</a></li>
+                <li className="nav-item"><a href="#projects">Projects</a></li>
+                <li className="nav-item"><a href="#contact">Contact</a></li>
+                <li className="nav-item"><a href={resume} target="_blank" rel="noopener noreferrer">Resume</a></li>
               </ul>
             </nav>
           )

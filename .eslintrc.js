@@ -15,6 +15,7 @@ module.exports = {
     "no-console": 0,
     "class-methods-use-this": 1,
     "linebreak-style": 0,
+    "react/jsx-one-expression-per-line": "off",
     "jsx-a11y/label-has-for": "off",
     "no-mixed-operators": [
       "error",

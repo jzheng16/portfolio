@@ -5,6 +5,9 @@ import './Project.css';
 import pic1 from '../../images/bg2.jpg';
 import pic2 from '../../images/Reacto.png';
 import pic3 from '../../images/MFP1.png';
+import gg1 from '../../images/gg-1.jpg';
+import gg2 from '../../images/gg-2.jpg';
+import gg3 from '../../images/gg-3.jpg';
 import Carousel from './Carousel';
 
 Modal.setAppElement('#root');
@@ -29,9 +32,15 @@ const ProjectInfo = [
     details: 'A new take on the famous MyFitnessPal tracking app that lets users to keep track of their diets and achieve their fitness goals.',
     github: 'https://github.com/jzheng16/MFP-clone',
   },
-
-
+  {
+    title: 'G&G Distributors',
+    tag: 'E-Commerce Site',
+    details: 'G&G Distributors offers a variety of products to shop for including silk flowers, glass vases, candles, and more for your special occasions.',
+    link: 'https://gandgwebstore.com'
+  },
 ];
+
+const gg = ProjectInfo[3];
 
 
 class Projects extends Component {
@@ -83,7 +92,7 @@ class Projects extends Component {
           Projects
         </h1>
         <div className="gallery">
-          <div
+          {/* <div
             className="card"
             data-aos="slide-right"
             data-aos-offset="200"
@@ -92,11 +101,26 @@ class Projects extends Component {
           >
             <div className="title">
               No Project Yet
-              <span> Built using React/Redux </span>
+              <span>Built with React/Redux</span>
             </div>
-            <button className="github" type="button" onClick={() => this.showModal(0)}> Learn More</button>
+            <button className="github" type="button" onClick={() => this.showModal(0)}>Learn More</button>
 
             <img className="project_picture" id="project1" src={pic1} alt="Project 1" />
+          </div> */}
+
+          <div
+            className="card"
+            data-aos="slide-left"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <div className="title">
+              {gg.title}
+              <span>Built with PHP/CS-Cart</span>
+            </div>
+            <button className="github" type="button" onClick={() => this.showModal(3)}>Learn More</button>
+            <img className="project_picture" id="project4" src={gg1} alt="Project 4" />
           </div>
           <div
             className="card"
@@ -107,9 +131,9 @@ class Projects extends Component {
           >
             <div className="title">
               REACTO deFacto
-              <span> Built using React/Redux </span>
+              <span>Built with React/Redux</span>
             </div>
-            <button className="github" type="button" onClick={() => this.showModal(1)}> Learn More</button>
+            <button className="github" type="button" onClick={() => this.showModal(1)}>Learn More</button>
 
             <img className="project_picture" id="project2" src={pic2} alt="Project 2" />
           </div>
@@ -122,11 +146,12 @@ class Projects extends Component {
           >
             <div className="title">
               MyFitnessPal Clone
-              <span> Built using React/Redux </span>
+              <span>Built with React/Redux</span>
             </div>
-            <button className="github" type="button" onClick={() => this.showModal(2)}> Learn More</button>
+            <button className="github" type="button" onClick={() => this.showModal(2)}>Learn More</button>
             <img className="project_picture" id="project3" src={pic3} alt="Project 3" />
           </div>
+
         </div>
         <Modal
           isOpen={showModal}
