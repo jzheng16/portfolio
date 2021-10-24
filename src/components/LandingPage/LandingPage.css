@@ -1,29 +1,45 @@
 /* Coolors Exported Palette - coolors.co/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #edf2f4;
-  height: 100vh;
-  overflow: hidden;
-  text-align: center; }
+.home {
+  background: black;
+  padding: 20px 25px 25px 40px; }
 
-header:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-image: url("../../images/bg2.jpg");
+.portrait {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin: 0 auto;
+  background-image: url("../../images/portrait3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1;
-  filter: blur(10px);
-  transition: all 1s;
-  height: 100vh;
-  width: 100%; }
+  margin-bottom: 24px; }
+
+.home-main-content {
+  color: white;
+  text-align: center; }
+  .home-main-content h2 {
+    font-size: 5rem;
+    margin: 0 0 8px 0;
+    font-weight: bold; }
+    @media screen and (max-width: 768px) {
+      .home-main-content h2 {
+        font-size: 3.2rem; } }
+  .home-main-content h3 {
+    margin: 0 0 24px 0;
+    font-size: 2.2rem;
+    font-weight: 300;
+    opacity: .8; }
+  .home-main-content .about-description {
+    font-size: 1.8rem;
+    color: #818189; }
+    .home-main-content .about-description p {
+      margin: 0 0 1rem 0; }
+  .home-main-content a {
+    color: #26a8ed;
+    transition: all .3s; }
+    .home-main-content a:hover {
+      color: #0A95FF; }
 
 header:hover::after {
   filter: blur(0px); }

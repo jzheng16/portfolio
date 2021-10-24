@@ -6,17 +6,21 @@
   justify-content: center;
   align-items: center;
   z-index: 3;
-  position: sticky;
-  top: 0; }
+  transition: var(--transition); }
+  .container-nav.fixed {
+    box-shadow: 0 10px 30px -10px gray;
+    position: fixed;
+    top: 0px; }
   .container-nav ul {
     list-style: none; }
   .container-nav li {
     display: inline-block;
-    margin-right: 3em; }
+    margin-right: 4.8rem; }
   .container-nav a {
     color: white;
     text-decoration: none;
-    cursor: pointer; }
+    cursor: pointer;
+    font-size: 1.6rem; }
   .container-nav a:hover, .container-nav a:active {
     color: #40e0d0; }
   .container-nav li:first-child {
@@ -27,8 +31,8 @@
   position: absolute !important;
   top: 10px !important;
   left: 10px !important;
-  width: 1em !important;
-  height: 1em !important; }
+  width: 1.6rem !important;
+  height: 1.6rem !important; }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
@@ -60,18 +64,18 @@
 
 .bm-menu {
   background: #373a47;
-  padding: 2.5em 1.5em;
-  font-size: 1.15em; }
+  padding: 4rem 2.4rem;
+  font-size: 1.8rem; }
 
 .bm-item-list {
   color: #b8b7ad;
-  padding: 0.8em; }
+  padding: 1.2rem; }
 
 /* Individual item */
 .bm-item {
   display: block;
-  margin-bottom: 1em;
-  font-size: 1.3em; }
+  margin-bottom: 1.6rem;
+  font-size: 2rem; }
 
 /* Styling of overlay */
 .bm-overlay {
@@ -84,4 +88,4 @@
   bottom: 0;
   height: 100vh !important;
   width: 70% !important;
-  margin-top: 3em; }
+  margin-top: 4.8rem; }

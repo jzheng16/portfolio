@@ -41,7 +41,7 @@ export default class NavbarContainer extends Component {
                 isOpen={menuOpen}
               >
                 <a onClick={this.closeMenu} href="#top">Home</a>
-                <a onClick={this.closeMenu} href="/blog">Blog</a>
+                {/* <a onClick={this.closeMenu} href="/blog">Blog</a> */}
                 <a onClick={this.closeMenu} href="#about">About</a>
                 <a onClick={this.closeMenu} href="#projects">Projects</a>
                 <a onClick={this.closeMenu} href="#contact">Contact</a>
@@ -56,7 +56,7 @@ export default class NavbarContainer extends Component {
                 <li className="nav-item">
                   <a href="#top">Home</a>
                 </li>
-                <li className="nav-item"><a href="/blog">Blog</a></li>
+                {/* <li className="nav-item"><a href="/blog">Blog</a></li> */}
                 <li className="nav-item"><a href="#about">About</a></li>
                 <li className="nav-item"><a href="#projects">Projects</a></li>
                 <li className="nav-item"><a href="#contact">Contact</a></li>

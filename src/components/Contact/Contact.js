@@ -27,13 +27,14 @@ class Contact extends Component {
   render() {
     const { formSubmitted } = this.state;
     return (
-      <section id="contact" className="contact">
+      <section id="contact" className="contact section">
 
         <h1
           data-aos="fade-right"
           data-aos-offset="200"
           data-aos-delay="50"
           data-aos-duration="1000"
+          className="section-header"
         >
           Contact
 

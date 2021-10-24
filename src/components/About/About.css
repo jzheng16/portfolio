@@ -4,15 +4,6 @@
   color: #edf2f4;
   box-sizing: border-box; }
 
-.about-title {
-  font-size: 2em;
-  margin: 0em 0em 1em 0em;
-  padding-top: 2em;
-  font-weight: bold; }
-  @media screen and (max-width: 768px) {
-    .about-title {
-      padding-top: 1em; } }
-
 .about-body {
   display: grid;
   width: 100%;
@@ -28,17 +19,6 @@
   @media screen and (max-width: 500px) {
     .intro {
       width: 85%; } }
-
-.portrait {
-  width: 7em;
-  height: 7em;
-  border-radius: 50%;
-  border: 1px solid white;
-  margin: 0 auto;
-  background-image: url("../../images/portrait1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
 
 .stack-title {
   margin-bottom: 1em; }

@@ -22,8 +22,7 @@ export default () => (
     <div className="about-body">
 
       <div className="intro column-1">
-        <div className="portrait">
-        </div>
+
         <p>Based in NYC</p>
         <p>Developer at RIA In A Box</p>
         <p>Maintainer of  <a href="https://gandgwebstore.com" target="_blank" rel="noopener noreferrer">G&G Webstore</a></p>

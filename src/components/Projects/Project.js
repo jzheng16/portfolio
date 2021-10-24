@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Modal from 'react-modal';
 
 import './Project.css';
@@ -43,24 +43,20 @@ const ProjectInfo = [
 const gg = ProjectInfo[3];
 
 
-class Projects extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { showModal: false, currentProject: 0 };
-    this.showModal = this.showModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
-  }
+const Projects = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [currentProject, setCurrentProject] = useState(0);
 
-  showModal(currentProject) {
-    this.setState({ showModal: true, currentProject });
-  }
+  const displayModal = currentProject => {
+    setShowModal(true);
+    setCurrentProject(currentProject);
+  };
 
-  closeModal() {
-    this.setState({ showModal: false });
-  }
+  const closeModal = () => {
+    setShowModal(false);
+  };
 
-  renderModal() {
-    const { showModal, currentProject } = this.state;
+  const renderModal = () => {
     if (!showModal) {
       return null;
     }
@@ -72,22 +68,22 @@ class Projects extends Component {
         >
           <Carousel project={ProjectInfo[currentProject]} />
         </div>
-        <button id="close-modal" type="button" onClick={this.closeModal}>
+        <button id="close-modal" type="button" onClick={closeModal}>
           <i className="close-modal-button fas fa-times"></i>
         </button>
       </div>
     );
-  }
+  };
 
-  render() {
-    const { showModal } = this.state;
-    return (
-      <section id="projects" className="projects">
+  return (
+    <section id="projects" className="projects section">
+      <div className="main-content">
         <h1
           data-aos="fade-left"
           data-aos-offset="200"
           data-aos-delay="50"
           data-aos-duration="1000"
+          className="section-header"
         >
           Projects
         </h1>
@@ -103,7 +99,7 @@ class Projects extends Component {
               No Project Yet
               <span>Built with React/Redux</span>
             </div>
-            <button className="github" type="button" onClick={() => this.showModal(0)}>Learn More</button>
+            <button className="learn_more" type="button" onClick={() => displayModal(0)}>Learn More</button>
 
             <img className="project_picture" id="project1" src={pic1} alt="Project 1" />
           </div> */}
@@ -119,7 +115,7 @@ class Projects extends Component {
               {gg.title}
               <span>Built with PHP/CS-Cart</span>
             </div>
-            <button className="github" type="button" onClick={() => this.showModal(3)}>Learn More</button>
+            <button className="learn_more" type="button" onClick={() => displayModal(3)}>Learn More</button>
             <img className="project_picture" id="project4" src={gg1} alt="Project 4" />
           </div>
           <div
@@ -133,7 +129,7 @@ class Projects extends Component {
               REACTO deFacto
               <span>Built with React/Redux</span>
             </div>
-            <button className="github" type="button" onClick={() => this.showModal(1)}>Learn More</button>
+            <button className="learn_more" type="button" onClick={() => displayModal(1)}>Learn More</button>
 
             <img className="project_picture" id="project2" src={pic2} alt="Project 2" />
           </div>
@@ -148,7 +144,7 @@ class Projects extends Component {
               MyFitnessPal Clone
               <span>Built with React/Redux</span>
             </div>
-            <button className="github" type="button" onClick={() => this.showModal(2)}>Learn More</button>
+            <button className="learn_more" type="button" onClick={() => displayModal(2)}>Learn More</button>
             <img className="project_picture" id="project3" src={pic3} alt="Project 3" />
           </div>
 
@@ -161,13 +157,14 @@ class Projects extends Component {
           className="project-modal"
           overlayClassName="project-overlay"
           shouldReturnFocusAfterClose={false}
-          onRequestClose={this.closeModal}
+          onRequestClose={closeModal}
         >
-          {this.renderModal()}
+          {renderModal()}
         </Modal>
-      </section>
-    );
-  }
-}
+      </div>
+    </section>
+  );
+};
+
 
 export default Projects;

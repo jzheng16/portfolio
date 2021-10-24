@@ -7,8 +7,8 @@ const Blog = () => {
   useEffect(() => {
     const getPosts = async () => {
       const res = await fetch('http://localhost:8000/api/posts');
-      const _posts = await res.json();
-      setPosts(_posts);
+      const posts = await res.json();
+      setPosts(posts);
     };
     getPosts();
   }, []);

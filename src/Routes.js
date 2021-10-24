@@ -6,7 +6,7 @@ import {
   Link
 } from 'react-router-dom';
 import Home from './components/Home/Home';
-import Blog from './components/Blog/Blog';
+// import Blog from './components/Blog/Blog';
 
 export default function Routes() {
   return (
@@ -14,9 +14,9 @@ export default function Routes() {
       <Route exact path="/">
         <Home />
       </Route>
-      <Route exact path="/blog">
+      {/* <Route exact path="/blog">
         <Blog />
-      </Route>
+      </Route> */}
 
     </Switch>
   );
